@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Adiaratou/reactjs/static/css/main.88dfcde8.chunk.css",
+    "main.js": "/Adiaratou/reactjs/static/js/main.cc1ce8e3.chunk.js",
+    "main.js.map": "/Adiaratou/reactjs/static/js/main.cc1ce8e3.chunk.js.map",
+    "runtime-main.js": "/Adiaratou/reactjs/static/js/runtime-main.94e292a3.js",
+    "runtime-main.js.map": "/Adiaratou/reactjs/static/js/runtime-main.94e292a3.js.map",
+    "static/js/2.846f2c28.chunk.js": "/Adiaratou/reactjs/static/js/2.846f2c28.chunk.js",
+    "static/js/2.846f2c28.chunk.js.map": "/Adiaratou/reactjs/static/js/2.846f2c28.chunk.js.map",
+    "index.html": "/Adiaratou/reactjs/index.html",
+    "static/css/main.88dfcde8.chunk.css.map": "/Adiaratou/reactjs/static/css/main.88dfcde8.chunk.css.map",
+    "static/js/2.846f2c28.chunk.js.LICENSE.txt": "/Adiaratou/reactjs/static/js/2.846f2c28.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94e292a3.js",
+    "static/js/2.846f2c28.chunk.js",
+    "static/css/main.88dfcde8.chunk.css",
+    "static/js/main.cc1ce8e3.chunk.js"
+  ]
+}
