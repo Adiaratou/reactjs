@@ -31,7 +31,7 @@ function Formulaire() {
     
     
         <br/>
-        <p>The HELP Group is seeking volunteers to serve our community. Fill in the information below to indicate how you would like to become involved.</p>
+       
         <br/>
         <div class="colums">
           <div class="item">
@@ -47,15 +47,15 @@ function Formulaire() {
             <input id="phone" type="tel"   name="phone" required/>
           </div>
           <div class="item">
-            <label for="street">Street<span>*</span></label>
+            <label for="street">Adresse<span>*</span></label>
             <input id="street" type="text"   name="street" required/>
           </div>
           <div class="item">
-            <label for="city">City<span>*</span></label>
+            <label for="city">Ville<span>*</span></label>
             <input id="city" type="text"   name="city" required/>
           </div>
           <div class="item">
-            <label for="state">State<span>*</span></label>
+            <label for="state">Pays<span>*</span></label>
             <input id="state" type="text"   name="state" required/>
           </div>
           <div class="item">
@@ -64,7 +64,7 @@ function Formulaire() {
           </div>
         </div>
         <div class="question">
-          <label>Include my contact information on lists distributed to other attendees.</label>
+          <label>Etes vous etudiant?</label>
           <div class="question-answer">
             <div>
               <input type="radio" value="none" id="radio_1" name="info"/>
@@ -77,13 +77,13 @@ function Formulaire() {
           </div>
         </div>
         <div class="item">
-          <p>Meal Preference</p>
+          <p>Filière</p>
           <select>
             <option selected value="" disabled selected></option>
-            <option value="b" >Beef</option>
-            <option value="ch">Chicken</option>
-            <option value="v">Vegetarian</option>
-            <option value="n">None</option>
+            <option value="b" >Informatique</option>
+            <option value="ch">Droit</option>
+            <option value="v">Medecine</option>
+            <option value="n">Chimie</option>
           </select>
         </div>
         <div class="week">
