@@ -25,90 +25,153 @@ function Formulaire() {
 
      }
 
-<form onSubmit={handleSubmit}>
+       <form onSubmit={handleSubmit}>
 
-      
-        <div class="banner">
-          <h1>Job Application Form</h1>
+    
+    
+    
+        <br/>
+        <p>The HELP Group is seeking volunteers to serve our community. Fill in the information below to indicate how you would like to become involved.</p>
+        <br/>
+        <div class="colums">
+          <div class="item">
+            <label for="name">Name<span>*</span></label>
+            <input id="name" type="text" name="name" required/>
+          </div>
+          <div class="item">
+            <label for="eaddress">Email Address<span>*</span></label>
+            <input id="eaddress" type="text"   name="eaddress" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Phone<span>*</span></label>
+            <input id="phone" type="tel"   name="phone" required/>
+          </div>
+          <div class="item">
+            <label for="street">Street<span>*</span></label>
+            <input id="street" type="text"   name="street" required/>
+          </div>
+          <div class="item">
+            <label for="city">City<span>*</span></label>
+            <input id="city" type="text"   name="city" required/>
+          </div>
+          <div class="item">
+            <label for="state">State<span>*</span></label>
+            <input id="state" type="text"   name="state" required/>
+          </div>
+          <div class="item">
+            <label for="zip">Zip<span>*</span></label>
+            <input id="zip" type="text"   name="zip" required/>
+          </div>
         </div>
-        <p class="top-info">Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
+        <div class="question">
+          <label>Include my contact information on lists distributed to other attendees.</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="info"/>
+              <label for="radio_1" class="radio"><span>Yes</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_2" name="info"/>
+              <label for="radio_2" class="radio"><span>No</span></label>
+            </div>
+          </div>
+        </div>
         <div class="item">
-          <p>Name<span class="required">*</span></p>
-          <div class="name-item">
-            <input type="text" name="name" placeholder="First" required/>
-            <input type="text" name="name" placeholder="Last" required/>
+          <p>Meal Preference</p>
+          <select>
+            <option selected value="" disabled selected></option>
+            <option value="b" >Beef</option>
+            <option value="ch">Chicken</option>
+            <option value="v">Vegetarian</option>
+            <option value="n">None</option>
+          </select>
+        </div>
+        <div class="week">
+          <div class="question">
+            <label>Days Attending </label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_3" name="day"/>
+                <label for="radio_3" class="radio"><span>Sunday</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_4" name="day"/>
+                <label for="radio_4" class="radio"><span>Monday</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_5" name="day"/>
+                <label for="radio_5" class="radio"><span>Tuesday</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_6" name="day"/>
+                <label for="radio_6" class="radio"><span>Wednesday</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_7" name="day"/>
+                <label for="radio_7" class="radio"><span>Thursday</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_8" name="day"/>
+                <label for="radio_8" class="radio"><span>Friday</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_9" name="day"/>
+                <label for="radio_9" class="radio"><span>Saturday</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <label>Activities Attending</label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_10" name="activity"/>
+                <label for="radio_10" class="radio"><span>CEO luncheon</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_11" name="activity"/>
+                <label for="radio_11" class="radio"><span>Finance seminar</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_12" name="activity"/>
+                <label for="radio_12" class="radio"><span>Leadership seminar</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_13" name="activity"/>
+                <label for="radio_13" class="radio"><span>Marketing workshop</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_14" name="activity"/>
+                <label for="radio_14" class="radio"><span>Teamwork seminar</span></label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="item">
-            <p>Email<span class="required">*</span></p>
-            <input type="text" name="name" required/>
-          </div>
-          <div class="item">
-            <p>Phone<span class="required">*</span></p>
-            <input type="text" name="name" required/>
-          </div>
-        </div>
-        <div class="position-item">
-          <div class="item">
-            <p>What position are you applying for?<span class="required">*</span></p>
-            <select required>
-              <option value="1">CEO</option>
-              <option value="2">Assistant</option>
-              <option value="3">Administration</option>
-              <option value="4">Secretary</option>
-              <option value="5">intern</option>
-            </select>
-          </div>
-          <div class="item">
-            <p>Available start date<span class="required">*</span></p>
-            <input type="date" name="bdate" required/>
-            <i class="fas fa-calendar-alt"></i>
-          </div>
+        <div class="item">
+          <label for="visit">Special Requirements</label>
+          <textarea id="visit" rows="3"></textarea>
         </div>
         <div class="question">
-          <p>What is your current employment status?<span class="required">*</span></p>
+          <label>Did you attend last years conference?</label>
           <div class="question-answer">
             <div>
-              <input type="radio" value="none" id="radio_1" name="status" required/>
-              <label for="radio_1" class="radio"><span>Employed</span></label>
+              <input type="radio" value="none" id="radio_15" name="contact"/>
+              <label for="radio_15" class="radio"><span>Yes</span></label>
             </div>
             <div>
-              <input type="radio" value="none" id="radio_2" name="status" required/>
-              <label for="radio_2" class="radio"><span>Self-Employed</span></label>
-            </div>
-            <div>
-              <input type="radio" value="none" id="radio_3" name="status" required/>
-              <label for="radio_3" class="radio"><span>Unemployed</span></label>
-            </div>
-            <div>
-              <input type="radio" value="none" id="radio_4" name="status" required/>
-              <label for="radio_4" class="radio"><span>Student</span></label>
-            </div>
-          </div>
-        </div>
-       
-        <div class="question">
-          <p>Would you like to list references</p>
-          <div class="question-answer">
-            <div>
-              <input type="radio" value="none" id="radio_5" name="references" />
-              <label for="radio_5" class="radio"><span>Yes</span></label>
-            </div>
-            <div>
-              <input type="radio" value="none" id="radio_6" name="references" />
-              <label for="radio_6" class="radio"><span>No</span></label>
+              <input  type="radio" value="none" id="radio_16" name="contact"/>
+              <label for="radio_16" class="radio"><span>No</span></label>
             </div>
           </div>
         </div>
         <div class="btn-block">
-          <button type="submit" >Apply For The Job</button>
+          <button type="submit" href="/">Submit</button>
         </div>
       </form>
     </div>
-    );
+  
+   );
+    
 
 }
-
 export default Formulaire;
  
