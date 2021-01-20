@@ -8,7 +8,7 @@ import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
 import Formulaire from "./Formulaire";
-import galerie from "./Galerie";
+import Galerie from "./Galerie";
 class Main extends Component {
     render() {
     return (
@@ -20,7 +20,7 @@ class Main extends Component {
     <li><NavLink to="/stuff">Stuff</NavLink></li>
     <li><NavLink to="/contact">Contact</NavLink></li>
     <li><NavLink to="/Formulaire">Formulaire</NavLink></li>
-    <li><NavLink to="/galerie">Galerie</NavLink></li>
+    <li><NavLink to="/Galerie">Galerie</NavLink></li>
 
     </ul>
     
@@ -29,7 +29,7 @@ class Main extends Component {
 <Route path="/stuff" component={Stuff}/>
 <Route path="/contact" component={Contact}/>
 <Route exact path="/Formulaire" component={Formulaire}/>
-<Route path="/galerie" component={galerie}/>
+<Route path="/Galerie" component={Galerie}/>
 </div>
 </div>
    
