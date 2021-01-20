@@ -4,9 +4,9 @@ render() {
 return (
     <div>
     
-    <img src="images/reactjs.jpg" alt="Logo react" />
+    
     <img src="images/sesame_logo.jpg" alt="Logo sesame" />
-    <img src="images/reactjs.jpg" alt="Logo react" />
+    
     <img src="images/sesame_logo.jpg" alt="Logo sesame" />
     
 
